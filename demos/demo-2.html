@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Opensourc Copy Restrict Tool, Opensource Content Restriction Tool">
+    <meta name="keywords" content="RestrictJS, Restrict Tool, Opensource copy restriction tool, Opensource Content Restriction Tool">
+    <meta name="author" content="Anap Corporation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RestrictJS | Opensource Content Restriction Tool</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,800" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!--Magnific popup css-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!--icon css-->
+    <link rel="stylesheet" href="css/line-icons.min.css">
+    <!--Template css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Template css-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <style type="text/css">
+	    .section-padding-bottom {
+		    padding: 0 0 !important;
+	    }
+    </style>
+</head>
+<body>
+
+
+
+<div class="loader_bg"><div class="loader"></div></div>
+
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+            <a class="navbar-brand page-scroll" href="https://ancap.in" target="_blank"> ANCAP TECHNOLOGY<span>.</span> </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
+                <li><a class="smooth-menu" href="#demo">Demo</a></li>
+                <li><a class="smooth-menu" href="#download">Download</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="home" class="banner-area section-padding">
+    <div class="bg-overlay black"></div>
+    <div class="containter">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="welcome-text">
+                    <div class="name-area wow fadeInDown" data-wow-delay="0.2s">RestrictJS is a standalone content restricting script.</div>
+                    <div class="single-invite text-center">
+                        <h2 data-wow-delay="0.2s">Demo 2: Adblocker using Sweetalert</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo" class="about-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sn-12 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-left">
+                    <h2 class="section-title">How To:</h2>
+                    <h4 class="wow fadeInDown" data-wow-delay="0.4s">Using this script, you can restrict:</h4>
+                    <ul class="feature-text">
+                        <li><i class="fa fa-check-square"></i> Content Copy or add watermark to copied content</li>
+                        <li><i class="fa fa-check-square"></i> Adblocker</li>
+                        <li><i class="fa fa-check-square"></i> View Source</li>
+                        <li><i class="fa fa-check-square"></i> Restrict Scroll</li>
+                        <li><i class="fa fa-check-square"></i> Context Menu</li>
+                        <li><i class="fa fa-check-square"></i> Image Copy or Drag Copy</li>
+                        <li><i class="fa fa-check-square"></i> Keyboard Content</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>&nbsp;<br/>
+
+
+    <div class="clearfix"></div>
+    <br/>&nbsp;<br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sn-12 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                <h1>Restrict Ad Blocker</h1>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">/**</span>
+<span style="color: #888888">* Restricting Ad blocker</span>
+<span style="color: #888888">**/</span>
+$(<span style="color: #007020">document</span>).restrictjs({
+                <span style="color: #888888">//Restrict Ad blocker</span>
+                restrictAdBlock<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>, <span style="color: #888888">//true or false</span>
+                restrictAdBlockOptions<span style="color: #333333">:</span> {
+                    redirect<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>, <span style="color: #888888">// true or false</span>
+                    redirectURL<span style="color: #333333">:</span> <span>&#39;http://www.domain.com/how-to-disable-adblock.html&#39;</span>, <span style="color: #888888">// redirect url for ad block redirection.</span>
+                    warning<span style="color: #333333">:</span> {
+                        bodyText<span style="color: #333333">:</span> <span>&#39;You need to disable adblocker on your website to continue using our website. If you have disabled the adblocker, refresh this page.&#39;</span>, <span style="color: #888888">//body text of adblocker popup</span>
+                        buttonText<span style="color: #333333">:</span> <span>&#39;How to disable Ad-block?&#39;</span> <span style="color: #888888">//button text of adblocker popup</span>
+                    }
+                }
+ });
+</pre></div>
+            </div>
+            </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="download" class="invitation-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="single-invite text-center">
+                <h2>Download Project on Github</h2>
+                <a href="#contact" class="my-btn-3"><i class="fa fa-download"></i> Download</a>
+                <a href="#contact" class="my-btn-3"><i class="fa fa-git"></i> Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <p>Built by <a href="http://abrahamarslan.com">Abraham Arslan</a> </p>
+                <p>&copy; Ancap Corporation 2018</p>
+                <p>&copy; All Right Reserved By <a href="https://ancap.in" target="_blank">Ancap Corporation</a></p> <!--change the copyright notice-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<!--Bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<!--easing js-->
+<script src="js/jquery.easing.min.js"></script>
+<!--mixitup js-->
+<script src="js/jquery.magnific-popup.js"></script>
+<!--Owl Carousel js-->
+<script src="js/owl.carousel.js"></script>
+<!--Validator js-->
+<script src="js/validator.js"></script>
+<!--Contact js-->
+<script src="js/contact.js"></script>
+<!--Bootstrap js-->
+<script src="js/wow.min.js"></script>
+<!--Theme js-->
+<script src="js/main.js"></script>
+<!--Sweetalert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--Ad js-->
+<script src="js/advertisement.js"></script>
+<!--Restrict js-->
+<script src="../dist/restirct-sweetalert.js"></script>
+<!--Initialize the restrictJS script-->
+<script type="text/javascript">
+    $(function(){
+        $(document).restrictjs({
+
+            restrictAdBlock: true, //true or false
+            restrictAdBlockOptions: {
+                redirect: false, // true or false
+                redirectURL: 'http://www.domain.com/how-to-disable-adblock.html', // redirect url for ad block redirection.
+                warning: {
+                    bodyText: 'You need to disable adblocker on your website to continue using our website. If you have disabled the adblocker, refresh this page.', //body text of adblocker popup
+                    buttonText: 'How to disable Ad-block?' //button text of adblocker popup
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
